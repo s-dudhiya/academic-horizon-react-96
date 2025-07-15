@@ -113,8 +113,27 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-hero">
+      {/* Navbar */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-sm border-b border-white/20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <div className="flex items-center">
+              <span className="text-xl font-bold text-white">EduNexus</span>
+            </div>
+            <div className="flex items-center space-x-4">
+              <Link to="/auth">
+                <Button variant="ghost" className="text-white hover:bg-white/20">
+                  <LogIn className="h-4 w-4 mr-2" />
+                  Login
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
-      <div className="relative min-h-screen flex flex-col items-center justify-center px-4 text-white">
+      <div className="relative min-h-screen flex flex-col items-center justify-center px-4 text-white pt-16">
         <div className="absolute inset-0 bg-black/20" />
         
         {/* University Header */}
